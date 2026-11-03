@@ -32,7 +32,7 @@
           <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div>
           <h3>Students</h3>
           <p>Research assistant positions and thesis or project supervision for undergraduate, master's, and PhD students. Skills in Python, R, Stata, data collection, or machine learning are a plus, and curiosity matters most.</p>
-          <div class="card-foot"><a class="link-arrow" id="mail-students" href="#">Email with your CV and interests</a></div>
+          <div class="card-foot"><a class="link-arrow" id="mail-students" href="#">Apply through the interest form</a></div>
         </article>
         <article class="card reveal">
           <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 19c0-3 2.5-5 5-5s5 2 5 5M11 19c0-3 2.5-5 5-5s5 2 5 5"/></svg></div>
@@ -60,10 +60,10 @@
     <div class="container">
       <div class="cta reveal">
         <div>
-          <h2>Contact the lab</h2>
-          <p>Costello College of Business · George Mason University · 4400 University Drive, Fairfax, VA 22030</p>
+          <h2>Tell us about yourself</h2>
+          <p>Fill out our short interest form (about 3 minutes) and we will get back to you. Prefer email? <a id="mail-main" href="#" style="color:#ffcc33">Write to us directly</a>.</p>
         </div>
-        <a class="btn btn-gold" id="mail-main" href="#">Email us</a>
+        <a class="btn btn-gold" data-form href="#" target="_blank" rel="noopener">Open the interest form</a>
       </div>
     </div>
   </section>
@@ -73,16 +73,15 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var email = window.LAB.people.director.email;
-    var subjects = {
-      "mail-students": "Student interest: Frontier Risk Lab",
-      "mail-faculty": "Faculty collaboration: Frontier Risk Lab",
-      "mail-partners": "Partnership inquiry: Frontier Risk Lab",
-      "mail-visitors": "Visiting scholar inquiry: Frontier Risk Lab",
-      "mail-main": "Frontier Risk Lab"
-    };
-    Object.keys(subjects).forEach(function (id) {
-      document.getElementById(id).href = "mailto:" + email + "?subject=" + encodeURIComponent(subjects[id]);
+    var form = window.LAB.formUrl;
+    document.getElementById("mail-main").href = "mailto:" + email + "?subject=" + encodeURIComponent("Frontier Risk Lab");
+    ["mail-students", "mail-faculty", "mail-partners", "mail-visitors"].forEach(function (id) {
+      var a = document.getElementById(id);
+      a.href = form;
+      a.target = "_blank";
+      a.rel = "noopener";
     });
+    document.querySelectorAll("[data-form]").forEach(function (a) { a.href = form; });
   });
 </script>
 </body>

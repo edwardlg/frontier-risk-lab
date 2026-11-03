@@ -6,6 +6,9 @@
    ========================================================= */
 
 window.LAB = {
+  // "Get Involved" interest form (Microsoft Forms, GMU account; responses in Forms/Excel)
+  formUrl: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=VXKFnlffR0ygwAVGRgOAyzgsFoLkaI1Jh-lxQh8kFFpUMVRYMDhEMUpSTEJVUTY5NUVZNTQzMkQwUC4u",
+
   pillars: {
     esg:   { name: "ESG, Sustainability & Health", url: "research.html#esg" },
     cyber: { name: "Cyber & Digital Risk",         url: "research.html#cyber" },

@@ -15,6 +15,7 @@ Most content lives in one file: **`assets/js/content.js`**.
 | Projects (title, summary, pillars, status) | `projects` |
 | News & events | `news` |
 | Publications | `publications` (an example entry is in the comment) |
+| "Get Involved" interest form link | `formUrl` (Microsoft Forms; responses are reviewed in Forms or Excel) |
 
 Pillar keys are `esg`, `cyber`, and `ai`. Tagging a project or paper with a pillar makes it
 appear on that pillar's section of the Research page and in the filters.
