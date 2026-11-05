@@ -17,29 +17,31 @@ window.LAB = {
 
   /* ---------------- People ---------------- */
   people: {
-    director: {
-      name: "Lei Gao",
-      initials: "LG",
-      role: "Lab Director",
-      affiliation: "Costello College of Business, George Mason University",
-      bio: "Lei Gao leads the Frontier Risk Lab, which studies how climate, health, cyber, and technology risks are measured, priced, and managed in financial markets. [Add a short bio: research interests, background, selected recognitions.]",
-      email: "lgao9@gmu.edu",
-      links: [
-        // { label: "Google Scholar", url: "https://scholar.google.com/..." },
-        // { label: "SSRN", url: "https://papers.ssrn.com/..." }
-      ]
-    },
-
-    faculty: [
+    // Lab leadership. The first entry's email is the lab's contact address.
+    directors: [
+      {
+        name: "Lei Gao",
+        initials: "LG",
+        role: "Director",
+        affiliation: "Costello College of Business, George Mason University",
+        bio: "Lei Gao leads the Frontier Risk Lab, which studies how climate, health, cyber, and technology risks are measured, priced, and managed in financial markets. [Add a short bio: research interests, background, selected recognitions.]",
+        email: "lgao9@gmu.edu",
+        links: [
+          // { label: "Google Scholar", url: "https://scholar.google.com/..." },
+          // { label: "SSRN", url: "https://papers.ssrn.com/..." }
+        ]
+      },
       {
         name: "Tian Kuo",
         initials: "TK",
-        role: "Affiliated Faculty",
+        role: "Co-Director",
         affiliation: "George Mason University",
-        bio: "[Add title, department, and research interests.]",
+        bio: "Tian Kuo co-directs the Frontier Risk Lab. [Add title, department, and research interests.]",
         links: []
       }
     ],
+
+    faculty: [],
 
     students: [
       // Replace the placeholders with your research assistants.

@@ -11,7 +11,7 @@ Most content lives in one file: **`assets/js/content.js`**.
 
 | To change | Edit |
 |---|---|
-| People (director, faculty, research assistants) | `people` |
+| People (directors, faculty, research assistants) | `people` |
 | Projects (title, summary, pillars, status) | `projects` |
 | News & events | `news` |
 | Publications | `publications` (an example entry is in the comment) |

@@ -247,6 +247,8 @@ ul { padding-left: 1.2em; }
 .person-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 @media (max-width: 680px) { .person { grid-template-columns: 1fr; } .avatar { width: 120px; height: 120px; font-size: 2.4rem; } }
 .open-card { border-style: dashed; box-shadow: none; background: var(--bg-soft); }
+.leaders { display: grid; gap: 56px; }
+.leaders .person + .person { padding-top: 56px; border-top: 1px solid var(--line); }
 
 /* ---------- split content ---------- */
 .split { display: grid; grid-template-columns: 300px 1fr; gap: 64px; }

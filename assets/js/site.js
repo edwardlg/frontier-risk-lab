@@ -5,7 +5,9 @@
   "use strict";
 
   var LAB = window.LAB || {};
-  var EMAIL = (LAB.people && LAB.people.director && LAB.people.director.email) || "";
+  var DIRECTORS = (LAB.people && LAB.people.directors) || [];
+  var EMAIL = (DIRECTORS[0] && DIRECTORS[0].email) || "";
+  LAB.contactEmail = EMAIL;
 
   var NAV = [
     ["about.html", "About"],
@@ -162,12 +164,13 @@
 
   function renderPeople() {
     var P = LAB.people || {};
-    var d = P.director;
-    var dirEl = document.querySelector('[data-render="director"]');
-    if (dirEl && d) {
-      dirEl.innerHTML = '<div class="person reveal"><div class="avatar" aria-hidden="true">' + esc(d.initials) + "</div><div>" +
-        '<div class="eyebrow">' + esc(d.role) + "</div><h2>" + esc(d.name) + '</h2><div class="role">' + esc(d.affiliation) + "</div>" +
-        "<p>" + esc(d.bio) + "</p>" + linkBtns(d.links, d.email) + "</div></div>";
+    var dirEl = document.querySelector('[data-render="directors"]');
+    if (dirEl) {
+      dirEl.innerHTML = DIRECTORS.map(function (d) {
+        return '<div class="person reveal"><div class="avatar" aria-hidden="true">' + esc(d.initials) + "</div><div>" +
+          '<div class="eyebrow">' + esc(d.role) + "</div><h2>" + esc(d.name) + '</h2><div class="role">' + esc(d.affiliation) + "</div>" +
+          "<p>" + esc(d.bio) + "</p>" + linkBtns(d.links, d.email) + "</div></div>";
+      }).join("");
     }
     var facEl = document.querySelector('[data-render="faculty"]');
     if (facEl) {

@@ -72,7 +72,7 @@
 <div id="site-footer"></div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var email = window.LAB.people.director.email;
+    var email = window.LAB.contactEmail;
     var form = window.LAB.formUrl;
     document.getElementById("mail-main").href = "mailto:" + email + "?subject=" + encodeURIComponent("Frontier Risk Lab");
     ["mail-students", "mail-faculty", "mail-partners", "mail-visitors"].forEach(function (id) {
