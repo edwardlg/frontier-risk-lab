@@ -187,7 +187,8 @@
       stEl.innerHTML = (P.students || []).map(function (s) {
         return '<article class="card reveal"><div class="avatar sm" aria-hidden="true">' + esc(s.initials) + "</div>" +
           '<h3 style="margin-top:18px">' + esc(s.name) + '</h3><div style="color:var(--green);font-weight:600;margin-bottom:6px">' + esc(s.role) + "</div>" +
-          '<p class="muted" style="margin:0">' + esc(s.program) + "<br>" + esc(s.focus) + "</p></article>";
+          ([s.program, s.focus].filter(Boolean).length ? '<p class="muted" style="margin:0">' + [s.program, s.focus].filter(Boolean).map(esc).join("<br>") + "</p>" : "") +
+          "</article>";
       }).join("");
     }
   }

@@ -23,12 +23,12 @@ window.LAB = {
         name: "Lei Gao",
         initials: "LG",
         role: "Director",
-        affiliation: "Costello College of Business, George Mason University",
-        bio: "Lei Gao leads the Frontier Risk Lab, which studies how climate, health, cyber, and technology risks are measured, priced, and managed in financial markets. [Add a short bio: research interests, background, selected recognitions.]",
+        affiliation: "Associate Professor of Finance, Costello College of Business, George Mason University",
+        bio: "Lei Gao is an Associate Professor of Finance at George Mason University's Costello College of Business. Lei's research spans market structure, investments, lending, corporate finance, and FinTech, with work published in the Journal of Financial Economics, the Journal of Financial and Quantitative Analysis, and the Proceedings of the National Academy of Sciences, among others. A PNAS study on fair lending was ranked among the Financial Times' top 100 business school research papers with social impact. Lei previously served as a financial economist at the U.S. Securities and Exchange Commission and holds a Ph.D. in Finance from the University of Georgia.",
         email: "lgao9@gmu.edu",
         links: [
-          // { label: "Google Scholar", url: "https://scholar.google.com/..." },
-          // { label: "SSRN", url: "https://papers.ssrn.com/..." }
+          { label: "Personal website", url: "https://sites.google.com/view/lei-gao/home" },
+          { label: "CV", url: "https://sites.google.com/view/lei-gao/cv" }
         ]
       },
       {
@@ -36,7 +36,7 @@ window.LAB = {
         initials: "KT",
         role: "Co-Director",
         affiliation: "Associate Professor, Department of Civil, Infrastructure, and Environmental Engineering, George Mason University",
-        bio: "Kuo Tian is an Associate Professor of Geotechnical and Geoenvironmental Engineering at George Mason University, where he also co-directs the SGI Research Group. He holds a Ph.D. and M.S. in Civil and Environmental Engineering from the University of Wisconsin–Madison and a B.S. in Civil Engineering from Huazhong University of Science and Technology. Before joining Mason, he was a postdoctoral researcher at the University of Virginia.",
+        bio: "Kuo Tian is an Associate Professor of Geotechnical and Geoenvironmental Engineering at George Mason University, where he also co-directs the SGI Research Group. He holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin–Madison. Before joining Mason, he was a postdoctoral researcher at the University of Virginia.",
         email: "ktian@gmu.edu",
         links: [
           { label: "SGI Research Group", url: "https://geotrans.vse.gmu.edu/node/197" }
@@ -46,11 +46,11 @@ window.LAB = {
 
     faculty: [],
 
+    // program and focus are optional, e.g. program: "MS Finance '27", focus: "Cyber incident disclosure"
     students: [
-      // Replace the placeholders with your research assistants.
-      { name: "[RA Name]", initials: "RA", role: "Research Assistant", program: "[Program, e.g. MS Finance]", focus: "[Research focus]" },
-      { name: "[RA Name]", initials: "RA", role: "Research Assistant", program: "[Program]", focus: "[Research focus]" },
-      { name: "[RA Name]", initials: "RA", role: "Research Assistant", program: "[Program]", focus: "[Research focus]" }
+      { name: "Ivy", initials: "I", role: "Research Assistant", program: "", focus: "" },
+      { name: "An", initials: "A", role: "Research Assistant", program: "", focus: "" },
+      { name: "Jieming", initials: "J", role: "Research Assistant", program: "", focus: "" }
     ]
   },
 
@@ -67,6 +67,24 @@ window.LAB = {
       title: "Pricing Climate and Physical Risk in Asset Markets",
       summary: "Measuring firms' exposure to heat, floods, and transition policy, and testing whether stock, bond, and real-estate prices reflect it.",
       pillars: ["esg"],
+      status: "Planned"
+    },
+    {
+      title: "Battery Supply Chain Risk",
+      summary: "Concentrated critical-mineral suppliers, geopolitical exposure, and recycling: how battery supply chain disruptions affect firms in electric vehicles, energy storage, and electronics.",
+      pillars: ["esg"],
+      status: "Planned"
+    },
+    {
+      title: "PFAS Contamination and Corporate Liability",
+      summary: "Measuring firms' exposure to \"forever chemicals\" through regulation, litigation, and remediation costs, and testing whether markets price that liability.",
+      pillars: ["esg"],
+      status: "Planned"
+    },
+    {
+      title: "Methane Emissions: Measurement, Disclosure, and Value",
+      summary: "Combining satellite and facility-level data on methane from energy, agriculture, and landfills to study how emissions, regulation, and disclosure affect firms.",
+      pillars: ["esg", "ai"],
       status: "Planned"
     },
     {
