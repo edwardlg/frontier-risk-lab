@@ -32,12 +32,15 @@ window.LAB = {
         ]
       },
       {
-        name: "Tian Kuo",
-        initials: "TK",
+        name: "Kuo Tian",
+        initials: "KT",
         role: "Co-Director",
-        affiliation: "George Mason University",
-        bio: "Tian Kuo co-directs the Frontier Risk Lab. [Add title, department, and research interests.]",
-        links: []
+        affiliation: "Associate Professor, Department of Civil, Infrastructure, and Environmental Engineering, George Mason University",
+        bio: "Kuo Tian is an Associate Professor of Geotechnical and Geoenvironmental Engineering at George Mason University, where he also co-directs the SGI Research Group. He holds a Ph.D. and M.S. in Civil and Environmental Engineering from the University of Wisconsin–Madison and a B.S. in Civil Engineering from Huazhong University of Science and Technology. Before joining Mason, he was a postdoctoral researcher at the University of Virginia.",
+        email: "ktian@gmu.edu",
+        links: [
+          { label: "SGI Research Group", url: "https://geotrans.vse.gmu.edu/node/197" }
+        ]
       }
     ],
 
